@@ -4,7 +4,7 @@ Contributors:      google
 Requires at least: 5.2
 Tested up to:      6.4
 Requires PHP:      5.6
-Stable tag:        1.118.0
+Stable tag:        1.120.0
 License:           Apache License 2.0
 License URI:       https://www.apache.org/licenses/LICENSE-2.0
 Tags:              google, search-console, analytics, adsense, pagespeed-insights, tag-manager, site-kit
@@ -108,6 +108,58 @@ There are a number of third-party plugins that allow you to block Google Analyti
 Please create a new topic on our [WordPress.org support forum](https://wordpress.org/support/plugin/google-site-kit/). Be sure to follow the [support forum guidelines](https://wordpress.org/support/guidelines/) when posting.
 
 == Changelog ==
+
+= 1.120.0 =
+
+**Added**
+
+* Add AdSense link module settings to the Analytics data store. See [#8048](https://github.com/google/site-kit-wp/issues/8048).
+
+**Enhanced**
+
+* Update the Key Metrics selection panel to omit the link to settings in view-only mode. See [#8202](https://github.com/google/site-kit-wp/issues/8202).
+* Add infrastructure to read and create audiences. See [#8108](https://github.com/google/site-kit-wp/issues/8108).
+* Improve compatibility checks code, including removing legacy notices for WordPress 4.x users. See [#8101](https://github.com/google/site-kit-wp/issues/8101).
+* Show a notification when the user goes offline. See [#8081](https://github.com/google/site-kit-wp/issues/8081).
+* Add AdSense link related settings to the Analytics module. See [#8047](https://github.com/google/site-kit-wp/issues/8047).
+* Create REST endpoint to fetch Analytics AdSense links. See [#8046](https://github.com/google/site-kit-wp/issues/8046).
+* Create module setup component for Analytics 4. See [#7929](https://github.com/google/site-kit-wp/issues/7929).
+* Add a note to the Interaction to Next Paint (INP) metric in the PageSpeed Insights widget. See [#7685](https://github.com/google/site-kit-wp/issues/7685).
+* Make the Admin Bar and Site Kit Summary dashboard widget available to view-only dashboard users. See [#7344](https://github.com/google/site-kit-wp/issues/7344).
+* Remove legacy error handling code from plugin. See [#5858](https://github.com/google/site-kit-wp/issues/5858).
+
+**Fixed**
+
+* Ensure that recommendations display correctly on the Pagespeed Insights widget. See [#8217](https://github.com/google/site-kit-wp/issues/8217).
+* Fix bug that caused new Analytics properties to appear as "zero data" instead of "gathering data". See [#8023](https://github.com/google/site-kit-wp/issues/8023).
+
+= 1.119.0 =
+
+**Added**
+
+* Add PHP client library for Analytics AdSense links. See [#8045](https://github.com/google/site-kit-wp/issues/8045).
+
+**Enhanced**
+
+* Fix top search queries results to not use links in the view only mode. Props harith-hacky03. See [#8025](https://github.com/google/site-kit-wp/issues/8025).
+* Add the Analytics 4 version of the Analytics new account creation form component. See [#7928](https://github.com/google/site-kit-wp/issues/7928).
+* Update the Analytics module to save the user's account ID in the new Analytics 4 module settings. See [#7927](https://github.com/google/site-kit-wp/issues/7927).
+* Improve the layout of Key Metric numeric and text tiles. See [#7860](https://github.com/google/site-kit-wp/issues/7860).
+* Add the "Setup in progress" stage for the "Enable enhanced measurement" banner. See [#7853](https://github.com/google/site-kit-wp/issues/7853).
+* Update secondary CTAs across the plugin to have consistent styling. See [#7797](https://github.com/google/site-kit-wp/issues/7797).
+* Update the AdSense settings view to show the progress bar while AdSense information is being loaded. See [#7291](https://github.com/google/site-kit-wp/issues/7291).
+* Update banner notifications to have more space between title and description. See [#7280](https://github.com/google/site-kit-wp/issues/7280).
+* Update Site Kit Summary widget to inherit common link styles for consistency. See [#7139](https://github.com/google/site-kit-wp/issues/7139).
+* Address inconsistencies with punctuation in copy throughout the plugin. See [#6720](https://github.com/google/site-kit-wp/issues/6720).
+* Add contrast to the Admin Bar dropdown. See [#6659](https://github.com/google/site-kit-wp/issues/6659).
+* Update font sizes between settings view and edit screens for consistency. See [#6477](https://github.com/google/site-kit-wp/issues/6477).
+* Improve the date legend in charts. See [#5830](https://github.com/google/site-kit-wp/issues/5830).
+* Add information about code/tag placement statuses to Site Health information. See [#5695](https://github.com/google/site-kit-wp/issues/5695).
+
+**Fixed**
+
+* Fix error when previewing Customizer drafts. See [#8077](https://github.com/google/site-kit-wp/issues/8077).
+* Update Analytics setup and settings views to avoid showing duplicate errors. See [#7276](https://github.com/google/site-kit-wp/issues/7276).
 
 = 1.118.0 =
 
